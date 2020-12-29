@@ -1,16 +1,12 @@
-#include "secrets.h"            // Currently a file for Keys, Certs, etc - Need to make this a captured variable for iSpindle
+#include "secrets.h"            // Currently a file for Keys, Certs, etc
 #include <WiFiClientSecure.h>   // From the core ESP library - Don't need to add this
 #include <MQTTClient.h>         // Need to add library 256dpi/MQTT
 #include <ArduinoJson.h>        // Need to add library bblanchon/ArduinoJSON
 #include "ESP8266WiFi.h"        // From the core ESP library - Don't need to add this.
 
-// ******************************
-// BIG NOTE: For iSpindel will need to look at sessions and speeding this up or battery will die!
-// ******************************
-
 // The MQTT topics that this device should publish/subscribe to
-#define AWS_IOT_PUBLISH_TOPIC   "D1mini/pub"
-#define AWS_IOT_SUBSCRIBE_TOPIC "D1mini/sub"
+#define AWS_IOT_PUBLISH_TOPIC   "xxxxxxxxxxxxx/pub"
+#define AWS_IOT_SUBSCRIBE_TOPIC "xxxxxxxxxxxxx/sub"
 WiFiClientSecure net = WiFiClientSecure();
 MQTTClient client = MQTTClient(256);
 
